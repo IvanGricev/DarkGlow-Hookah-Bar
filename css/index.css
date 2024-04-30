@@ -11,6 +11,15 @@ body{
     transform: scale(1.22);
 }
 
+.fs-0{
+    font-size: 50px;
+}
+
+.hookah{
+    background-image: url(img/ssss.png);
+    background-size: cover;
+}
+
 /*NEON*/
 .button {
     padding: 12px;
@@ -31,6 +40,15 @@ body{
     0 0 75px rgba(220, 20, 114, 1),
     0 0 125px rgba(220, 20, 114, 1); 
 }
+.btn-blue{
+    color: rgba(2, 192, 230, 1);
+    border-color: rgba(2, 192, 230, 1);
+}
+.btn-blue:hover{ 
+    background-color: rgba(2, 192, 230, 1);
+    border-color: rgba(2, 192, 230, 1);
+    transform: translate(0px,-4px);
+}
 
 .nav-link{
     text-shadow: 0 0 5px rgba(2, 192, 230, 1), 0 0 25px rgba(2, 192, 230, 1); 
@@ -44,3 +62,17 @@ body{
     0 0 100px rgba(2, 192, 230, 1); 
     transform: scale(1.12);
 }
+.nav-link:active{
+    text-shadow: 0 0 5px rgba(2, 192, 230, 1), 0 0 25px rgba(2, 192, 230, 1); 
+}
+
+.text-glow-red{
+    text-shadow: 0 0 5px rgba(220, 20, 114, 1), 0 0 25px rgba(220, 20, 114, 1); 
+}
+
+.text-glow-red:hover{ 
+    text-shadow: 0 0 5px rgba(220, 20, 114, 1),
+    0 0 15px rgba(220, 20, 114, 1), 
+    0 0 25px rgba(220, 20, 114, 1);
+}
+
