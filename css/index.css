@@ -16,8 +16,38 @@ body{
 }
 
 .hookah{
-    background-image: url(img/ssss.png);
+    background-image: url('img/ssss.png');
     background-size: cover;
+}
+
+.tastes-block{
+    background-image: url('/img/taste.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 150px;
+    margin-right: 170px;
+}
+
+.tastes{
+    background-color: rgb(165, 0, 77);
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 350px;
+}
+
+.stik{
+    padding: 40px;
+    border-radius: 12px;
+    background-color: rgba(120, 120, 120, 0.48);
+    max-width: 450px;
+    max-height: 360px;
+    margin-top: auto;
+    margin-bottom: -80px;
+    margin-right: -120px;
+    z-index: 20;
 }
 
 /*NEON*/
