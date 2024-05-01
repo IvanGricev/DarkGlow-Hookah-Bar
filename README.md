@@ -1,6 +1,6 @@
 # DarkGlow-Hookah-Bar
  DarkGlow Hookah Bar веб приложение для бара-кальянной.
-# Collaborators: лох И. В. Щанович Д. А.
+# Collaborators: Грицев И. В. Щанович Д. А.
  Date of creation: 30/4/2024
  FAQ: ivangricev25@gmail.com
  
