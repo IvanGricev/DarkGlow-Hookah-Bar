@@ -49,7 +49,12 @@ body{
     margin-right: -120px;
     z-index: 20;
 }
-
+.fs-0 {
+    font-size: 65px;
+}
+.text-pink{
+    color:rgba(220, 20, 114, 1);
+}
 /*NEON*/
 .button {
     padding: 12px;
