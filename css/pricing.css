@@ -103,6 +103,6 @@ p {
     margin-top: 20px;
   }
   .name-item{
-    border: 2px solid rgba(220, 20, 114, 1);;
     padding: 10px;
+    border-bottom: 2px solid rgba(220, 20, 114, 1);
   }
