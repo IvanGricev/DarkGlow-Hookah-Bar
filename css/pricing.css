@@ -56,14 +56,14 @@ p {
   }
   
 .column {
-    flex: 0 0 25%; /* Задаем ширину каждого элемента */
+    flex: 0 0 25%; 
     padding: 0px;
   }
   
   .flawour {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Выравниваем элементы по левому краю */
+    justify-content: flex-start; 
   }
   
   .apple,
@@ -71,22 +71,22 @@ p {
   .kivi,
   .mix {
     height: 100%;
-    background-size: cover; /* Изменяем на cover для заполнения фона */
+    background-size: cover; 
     background-repeat: no-repeat;
-    position: relative; /* Добавляем позиционирование */
+    position: relative; 
   }
   
   .apple:before,
   .orange:before,
   .kivi:before,
   .mix:before {
-    content: ''; /* Создаем псевдоэлемент для заполнения пространства */
+    content: ''; 
     display: block;
-    padding-top: 100%; /* Задаем пропорциональную высоту */
+    padding-top: 100%;
   }
  
   .price {
-    flex: 0 0 25%; /* Задаем ширину каждого элемента */
+    flex: 0 0 25%; 
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -96,7 +96,7 @@ p {
     flex: 0 0 33.33%;
     padding: 0px;
     background-color: transparent;
-    border: 4px solid rgba(220, 20, 114, 1);;
+    border: 4px solid rgba(220, 20, 114, 1);
     text-align: center;
   }
   .item {
