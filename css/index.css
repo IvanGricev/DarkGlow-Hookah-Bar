@@ -70,6 +70,9 @@ body{
     0 0 75px rgba(220, 20, 114, 1),
     0 0 125px rgba(220, 20, 114, 1); 
 }
+.btn-outline-neon:active {
+    transform: scale(0.95);
+}
 .btn-blue{
     color: rgba(2, 192, 230, 1);
     border-color: rgba(2, 192, 230, 1);
@@ -78,6 +81,12 @@ body{
     background-color: rgba(2, 192, 230, 1);
     border-color: rgba(2, 192, 230, 1);
     transform: translate(0px,-4px);
+}
+.btn-blue:active{ 
+  background-color: rgba(2, 192, 230, 1) !important;
+  border-color: rgba(2, 192, 230, 1) !important;
+  transform: scale(0.95);
+
 }
 
 .nav-link{

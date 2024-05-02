@@ -47,7 +47,7 @@ a {
 
 .form-container form {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
-  background: #fff;
+  background: rgba(217, 217, 217, 0.1);
   display: flex;
   flex-direction: column;
   padding: 0 50px;
@@ -73,17 +73,43 @@ a {
 }
 
 .form-container input {
-  background: #eee;
-  border: none;
+  background: transparent;
+  color: white;
+  border-color: rgba(2, 192, 230, 1);
+  border-width: 5px;
+  border-style: solid;
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
 }
+::placeholder {
+  color: rgba(2, 192, 230, 1);
+}
+.text-red{
+  color: rgba(255, 0, 120, 1);
+}
+
+.btn-reg{
+  color: rgba(2, 192, 230, 1);
+  border-color: rgba(2, 192, 230, 1);
+  border-width: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 18px;
+}
+.btn-reg:hover{ 
+  background-color: rgba(2, 192, 230, 1) !important;
+  border-color: rgba(2, 192, 230, 1) !important;
+}
+.btn-reg:active{ 
+  background-color: rgba(2, 192, 230, 1) !important;
+  border-color: rgba(2, 192, 230, 1) !important;
+  transform: scale(0.95);
+}
 
 .reg {
   border-radius: 20px;
-  border: 1px solid #ff4b2b;
-  background: #ff445c;
+  border: 1px solid;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
@@ -138,8 +164,7 @@ a {
 }
 
 .overlay {
-  background: #ff416c;
-  background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+  background: linear-gradient(to bottom, rgba(0, 213, 255, 1), rgba(255, 0, 120, 1)) no-repeat 0 0 / cover;
   color: #fff;
   position: relative;
   left: -100%;
