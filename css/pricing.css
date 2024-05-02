@@ -92,7 +92,7 @@ p {
     flex: 0 0 25%; 
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content:center;
   }
 
 .column-item{
