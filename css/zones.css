@@ -31,7 +31,7 @@ p {
     background-repeat: no-repeat;
 }
 .golden{
-    background-image: url('/img/Golden.svg');
+    background-image: url('/img/Golden.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -53,6 +53,14 @@ p {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+.golden,
+.vip-1,
+.vip-2,
+.meeting {
+  flex-basis: 25%;
+}
+
 .zone {
     display: flex;
     flex-wrap: wrap;
@@ -66,21 +74,21 @@ p {
   
   .column-first {
     flex: 0 0 50%;
-    padding: 20px;
+    padding: 10px;
     text-align: left;
-    height: 100%; /* Set the height to 100% */
+    height: 100%;
   }
   .column-second {
     flex: 0 0 25%;
-    padding: 20px;
+    padding: 10px;
     text-align: left;
-    height: 100%; /* Set the height to 100% */
+    height: 100%;
   }
   
   .basic-hall,
   .terrace {
     flex-basis: 50%;
-    height: 100%; /* Set the height to 100% */
+    height: 100%;
   }
 
   
@@ -105,3 +113,14 @@ p {
     display: block;
     padding-top: 100%;
   }
+.last{
+    margin-top: 10px;
+    margin-bottom: 10%;
+}
+.negr{
+    margin-top: 5%;
+}
+.bord{
+    margin-left: 3%;
+    margin-bottom: 5%;
+}
