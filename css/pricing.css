@@ -1,0 +1,108 @@
+main {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-weight: bold;
+    margin: 0;
+}
+p {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+  }
+
+.fs-0{
+    font-size: 100px;
+}
+.fs-1{
+    font-size: 50px;
+}
+
+.apple{
+    height: 100%;
+    background-image: url('/img/apple.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.orange{
+    height: 100%;
+    background-image: url('/img/orange.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.kivi{
+    height: 100%;
+    background-image: url('/img/kivi.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.mix{
+    height: 100%;
+    background-image: url('/img/mix.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.column {
+    flex: 0 0 25%; /* Задаем ширину каждого элемента */
+    padding: 0px;
+  }
+  
+  .flawour {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Выравниваем элементы по левому краю */
+  }
+  
+  .apple,
+  .orange,
+  .kivi,
+  .mix {
+    height: 100%;
+    background-size: cover; /* Изменяем на cover для заполнения фона */
+    background-repeat: no-repeat;
+    position: relative; /* Добавляем позиционирование */
+  }
+  
+  .apple:before,
+  .orange:before,
+  .kivi:before,
+  .mix:before {
+    content: ''; /* Создаем псевдоэлемент для заполнения пространства */
+    display: block;
+    padding-top: 100%; /* Задаем пропорциональную высоту */
+  }
+ 
+  .price {
+    flex: 0 0 25%; /* Задаем ширину каждого элемента */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .column-item{
+    flex: 0 0 33.33%;
+    padding: 0px;
+    background-color: transparent;
+    border: 4px solid rgba(220, 20, 114, 1);;
+    text-align: center;
+  }
+  .item {
+    margin-top: 20px;
+  }
+  .name-item{
+    border: 2px solid rgba(220, 20, 114, 1);;
+    padding: 10px;
+  }
