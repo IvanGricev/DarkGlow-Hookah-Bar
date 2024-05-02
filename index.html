@@ -52,13 +52,15 @@
                     Amazing location for a meal and shisha in an ambient setting.
                     Don't miss out on this exotic fusion of cultures!
                 </div>
-
+            
                 <div class="tastes fs-3">
                     <h2 class="text-decoration-underline">Hookah Lounge</h2>
-                    <p>Double Apple</p>
-                    <p>Orange mint</p>
-                    <p>Kiwi mint</p>
-                    <p>Fruit mix</p>
+                    <ul>
+                        <li><a class="to-change text-white text-decoration-none">Double Apple</a></li>
+                        <li><a class="to-change text-white text-decoration-none">Orange mint</a></li>
+                        <li><a class="to-change text-white text-decoration-none">Kiwi mint</a></li>
+                        <li><a class="to-change text-white text-decoration-none">Fruit mix</a></li>
+                    </ul>
                 </div>
             </section>
             <section class="youtube text-white align-items-center justify-content-center text-center">
@@ -108,5 +110,39 @@
         </div>
     </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
+
+<script>
+    $(document).ready(function() {
+        var texts = [
+            "Amazing location for a meal and shisha in an ambient setting.",
+            "Don't miss out on this exotic fusion of cultures!",
+            "Experience the unique taste of our Double Apple.",
+            "Refresh your senses with our Orange Mint.",
+            "Indulge in the tropical flavor of Kiwi Mint.",
+            "Savor the blend of fruits in our Fruit Mix."
+        ];
+    
+        var index = 0;
+    
+        function changeStikText() {
+            $(".stik").fadeOut("slow", function() {
+                $(this).html(texts[index]).fadeIn("slow");
+            });
+            $(".to-change").removeClass('fs-2', 'fw-bold');
+            $(".to-change").eq(index).addClass('fs-2', 'fw-bold');
+            index = (index + 1) % texts.length;
+        }
+    
+        $(".to-change").click(function() {
+            index = $(".to-change").index(this);
+            changeStikText();
+        });
+    
+        setInterval(changeStikText, 5000); // меняет текст каждые 5 секунд
+    });
+</script>
+
